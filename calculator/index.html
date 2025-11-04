@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container" id="container">
+        <!--컨트롤러 영역-->
+        <div class="window-controls" id="window-controls">
+            <button type="button" class="btnClose" id="btnClose"></button>
+            <button type="button" class="btnMinimize" id="btnMinimize"></button>
+            <button type="button" class="btnMaximize" id="btnMaximize"></button>
+        </div>
+        <!--디스플레이 영역-->
+        <div class="display" id="display">0</div>
+        <!--버튼 영역-->
+        <div class="buttons" id="buttons">
+            <!--1행-->
+            <button class="button function" data-key="C">C</button>
+            <button class="button function" data-key="invert">±</button>
+            <button class="button function" data-key="percent">%</button>
+            <button class="button operator" data-key="/">/</button>
+            <!--2행-->
+            <button class="button number" data-key="7">7</button>
+            <button class="button number" data-key="8">8</button>
+            <button class="button number" data-key="9">9</button>
+            <button class="button operator" data-key="*">*</button>
+            <!--3행-->
+            <button class="button number" data-key="4">4</button>
+            <button class="button number" data-key="5">5</button>
+            <button class="button number" data-key="6">6</button>
+            <button class="button operator" data-key="-">-</button>
+            <!--4행-->
+            <button class="button number" data-key="1">1</button>
+            <button class="button number" data-key="2">2</button>
+            <button class="button number" data-key="3">3</button>
+            <button class="button operator" data-key="+">+</button>
+            <!--5행-->
+            <button class="button number zero" data-key="0">0</button>
+            <button class="button function" data-key=".">.</button>
+            <button class="button operator" data-key="=">=</button>
+            <!-- data-key: 각 버튼이 어떤 기능을 하는지 js가 식별할 수 있도록 데이터를 저장하는 역할-->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body> 
+</html>
+
